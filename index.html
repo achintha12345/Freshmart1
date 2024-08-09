@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order page</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/v4/icons/">
+
+  <!--fav icon-->
+  <link rel="icon" type="image/x-icon" href="./images/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ 
+  <!---mani-->
+  <link rel="manifest" href="./manifest.json">
+</head>
+<body>
+
+  <!--nav bar-->
+    <nav>
+
+      <!--logo-->
+        <a href="index.html" class="logo"><i class="fas fa-shopping-basket"></i> &nbsp;Fresh Mart</a>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+          <!--nav bar links-->
+        <section class="links">
+  
+              <ul>    
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Fruits</a></li>
+                  <li><a href="#">Vegetables</a></li>
+                  <li><a href="#">Dairy Produce</a></li>
+                  <li><a href="#">Meat and Seafood</a></li>
+                  <li><a href="#">Baking and Cooking Ingredients</a></li>
+              </ul>
+        </section>
+       
+        
+           <!--search bar-->
+          <section class="search-bar">
+              <input type="text" placeholder="Search...">
+              <button style="margin-right: 10px;" type="submit">Search</button>
+          </section>
+  
+        
+          
+      </nav>
+    <h1>Order Groceries</h1>
+    <form id="grocery-form">
+        <section>
+            <h2>Fruits</h2>
+            <div class="item">
+                <img src="images/apple.webp" alt="Apple">
+                <label for="apple">Apple </label> <label for="Pricepple"> 1kg - Rs:450</label>
+                <input type="number" id="apple" name="apple" min="0" step="0.1" value="0">
+                <button type="button" class="add-button" data-item="apple">Add</button>
+            </div>
+            <div class="item">
+                <img src="images/Pic923007.webp" alt="Banana">
+                <label for="banana">Banana</label>
+                <label>1kg - Rs: 380</label>
+                <input type="number" id="banana" name="banana" min="0" step="0.1"value="0">
+                <button type="button" class="add-button" data-item="banana">Add</button>
+            </div>
+            
+            <div class="item">
+                <img src="images/mangos.webp" alt="Mangos">
+                <label for="Mangos">Mangos</label>
+                <label id="Mangos-details">1kg - Rs: 420</label>
+                <input type="number" id="Mangos" name="Mangos" min="0" step="0.1"value="0" >
+                <button type="button" class="add-button" data-item="Mangos">Add</button>
+            </div>
+            
+            <div class="item">
+                <img src="images/pineapple.webp" alt="pineapple">
+                <label for="pineapple">pineapple</label> <label> 1kg - Rs:350</label>
+                <input type="number" id="pineapple" name="pineapple" min="0" step="0.1"value="0">
+                <button type="button" class="add-button" data-item="pineapple">Add</button>
+            </div>
+            <div class="item">
+                <img src="images/papaya.webp" alt="Papaya">
+                <label for="Papaya">Papaya</label>
+                <label>1kg - Rs: 600</label>
+                <input type="number" id="Papaya" name="Papaya" min="0" step="0.1"value="0">
+                <button type="button" class="add-button" data-item="Papaya">Add</button>
+            </div>
+            
+            <div class="item">
+                <img src="images/katu anoda.webp" alt="Katu Anoda">
+                <label for="Anoda">Katu Anoda</label>
+                <label id="Anoda-details">1kg - Rs: 320</label>
+                <input type="number" id="Anoda" name="Katu Anoda" min="0" step="0.1"value="0" >
+                <button type="button" class="add-button" data-item="Anoda">Add</button>
+            </div>
+            
+            <!-- Add more fruits here -->
+        </section>
+        <section>
+            <h2>Vegetables</h2>
+            <div class="item">
+                <img src="images/green beans.webp" alt="Green Beans">
+                <label for="GreenBeans">Green Beans</label> 
+                <label>1kg - Rs: 240</label>
+                <input type="number" id="GreenBeans" name="Green Beans" min="0" step="0.1"value="0">
+                <button type="button" class="add-button" data-item="GreenBeans">Add</button>
+            </div>
+            
+            <div class="item">
+                <img src="images/pumpkin.webp" alt="Pumpkin">
+                <label for="Pumpkin">Pumpkin </label> <label> 1kg - Rs:220</label>
+                <input type="number" id="Pumpkin" name="Pumpkin" min="0" step="0.1"value="0">
+                <button type="button" class="add-button" data-item="Pumpkin">Add</button>
+            </div>
+            <div class="item">
+                <img src="images/dabala.webp" alt="Dabala">
+                <label for="Dabala">Dabala </label> <label> 1kg - Rs:180</label>
+                <input type="number" id="Dabala" name="Dabala" min="0" step="0.1"value="0">
+                <button type="button" class="add-button" data-item="Dabala">Add</button>
+            </div>
+            <div class="item">
+                <img src="images/drumsticks.webp" alt="Drumsticks">
+                <label for="Drumsticks">Drumsticks</label> <label>  1kg - Rs:260</label>
+                <input type="number" id="Drumsticks" name="Drumsticks" min="0" step="0.1"value="0">
+                <button type="button" class="add-button" data-item="Drumsticks">Add</button>
+            </div>
+            <div class="item">
+                <img src="images/beetroot.webp" alt="Beetroot">
+                <label for="Beetroot">Beetroot</label> <label>  1kg - Rs:340</label>
+                <input type="number" id="Beetroot" name="Beetroot" min="0" step="0.1"value="0">
+                <button type="button" class="add-button" data-item="Beetroot">Add</button>
+            </div>
+            <div class="item">
+                <img src="images/carrot.webp" alt="Carrot">
+                <label for="carrot">Carrot</label> <label> 1kg - Rs:380</label>
+                <input type="number" id="carrot" name="carrot" min="0" step="0.1"value="0">
+                <button type="button" class="add-button" data-item="carrot">Add</button>
+            </div>
+      
+            <!-- Add more vegetables here -->
+        </section>
+        <section>
+            <h2>Dairy Produce</h2>
+            <div class="item">
+                <img src="images/fresh milk.webp" alt="Fresh Milk">
+                <label for="FreshMilk">Fresh Milk</label>
+                <label>1 quantity - Rs: 280</label>
+                <input type="number" id="FreshMilk" name="Fresh Milk" min="0"value="0">
+                <button type="button" class="add-button" data-item="FreshMilk">Add</button>
+            </div>
+            
+            <div class="item">
+                <img src="images/kotmale cheese.webp" alt="Kotmale Cheese">
+                <label for="kotmaleCheese">Kotmale Cheese</label>
+                <label>1 quantity - Rs: 420</label>
+                <input type="number" id="kotmaleCheese" name="Kotmale Cheese" min="0"value="0">
+                <button type="button" class="add-button" data-item="kotmaleCheese">Add</button>
+            </div>
+            
+            <div class="item">
+                <img src="images/happy cow cheese.webp" alt="Happy Cow Cheese">
+                <label for="HappyCowCheese">Happy Cow Cheese</label>
+                <label>1 quantity - Rs: 450</label>
+                <input type="number" id="HappyCowCheese" name="Happy Cow Cheese" min="0"value="0">
+                <button type="button" class="add-button" data-item="HappyCowCheese">Add</button>
+            </div>
+            
+            <div class="item">
+                <img src="images/fresh curd.webp" alt="Fresh Curd">
+                <label for="FreshCurd">Fresh Curd</label>
+                <label>1 quantity - Rs: 520</label>
+                <input type="number" id="FreshCurd" name="Fresh Curd" min="0"value="0">
+                <button type="button" class="add-button" data-item="FreshCurd">Add</button>
+            </div>
+            
+            <div class="item">
+                <img src="images/drinking yoghurt.webp" alt="Drinking Yoghurt">
+                <label for="DrinkingYoghurt">Drinking Yoghurt</label>
+                <label>1 quantity - Rs: 180</label>
+                <input type="number" id="DrinkingYoghurt" name="Drinking Yoghurt" min="0"value="0">
+                <button type="button" class="add-button" data-item="DrinkingYoghurt">Add</button>
+            </div>
+            
+            <div class="item">
+                <img src="images/ambewela yoghurt.webp" alt="Ambewela Yoghurt">
+                <label for="AmbewelaYoghurt">Ambewela Yoghurt</label>
+                <label>1 quantity - Rs: 80</label>
+                <input type="number" id="AmbewelaYoghurt" name="Ambewela Yoghurt" min="0"value="0">
+                <button type="button" class="add-button" data-item="AmbewelaYoghurt">Add</button>
+            </div>
+            
+
+        </section>
+        <section>
+            <h2>Meat and Seafood</h2>
+            <div class="item">
+                <img src="images/chicken.webp" alt="Chicken">
+                <label for="chicken">Chicken</label> 
+                <label>1 Kg - Rs:1200</label>
+                <input type="number" id="chicken" name="chicken" min="0" step="0.1"value="0">
+                <button type="button" class="add-button" data-item="chicken">Add</button>
+            </div>
+            
+            <div class="item">
+                <img src="images/beef.webp" alt="Beef">
+                <label for="Beef">Beef</label> 
+                <label>1 Kg - Rs:1800</label>
+                <input type="number" id="Beef" name="Beef" min="0" step="0.1"value="0">
+                <button type="button" class="add-button" data-item="Beef">Add</button>
+            </div>
+            
+            <div class="item">
+                <img src="images/tuna fish.webp" alt="Tuna Fish">
+                <label for="tunaFish">Tuna Fish</label> 
+                <label>1 Kg - Rs:1100</label>
+                <input type="number" id="tunaFish" name="Tuna Fish" min="0" step="0.1"value="0">
+                <button type="button" class="add-button" data-item="tunaFish">Add</button>
+            </div>
+            
+            <div class="item">
+                <img src="images/thalapath.webp" alt="Thalapath">
+                <label for="Thalapath">Thalapath</label> 
+                <label>1 Kg - Rs:1400</label>
+                <input type="number" id="Thalapath" name="Thalapath" min="0" step="0.1"value="0">
+                <button type="button" class="add-button" data-item="Thalapath">Add</button>
+            </div>
+            
+            <!-- Add more meat and seafood here -->
+        </section>
+        <section>
+            <h2>Baking and Cooking Ingredients</h2>
+            <div class="item">
+                <img src="images/flour.webp" alt="Flour">
+                <label for="flour">Flour</label> 
+                <label>1 Kg - Rs:260</label>
+                <input type="number" id="flour" name="flour" min="0"value="0">
+                <button type="button" class="add-button" data-item="flour">Add</button>
+            </div>
+            
+            <div class="item">
+                <img src="images/sugar.webp" alt="Sugar">
+                <label for="sugar">Sugar</label> 
+                <label>1 Kg - Rs:240</label>
+                <input type="number" id="sugar" name="sugar" min="0"value="0">
+                <button type="button" class="add-button" data-item="sugar">Add</button>
+            </div>
+            
+            <div class="item">
+                <img src="images/curry powder.webp" alt="Curry Powder">
+                <label for="CurryPowder">Curry Powder</label> 
+                <label>1 quantity - Rs: 200</label>
+                <input type="number" id="CurryPowder" name="Curry Powder" min="0"value="0">
+                <button type="button" class="add-button" data-item="CurryPowder">Add</button>
+            </div>
+            
+            <div class="item">
+                <img src="images/coconut oil.webp" alt="Coconut Oil">
+                <label for="CoconutOil">Coconut Oil</label> 
+                <label>1 quantity - Rs: 350</label>
+                <input type="number" id="CoconutOil" name="Coconut Oil" min="0"value="0">
+                <button type="button" class="add-button" data-item="CoconutOil">Add</button>
+            </div>
+            
+            <div class="item">
+                <img src="images/string hopper flour.webp" alt="String Hopper Flour">
+                <label for="StringHopperFlour">String Hopper Flour</label> 
+                <label>1 quantity - Rs: 240</label>
+                <input type="number" id="StringHopperFlour" name="String Hopper Flour" min="0"value="0">
+                <button type="button" class="add-button" data-item="StringHopperFlour">Add</button>
+            </div>
+            
+            <div class="item">
+                <img src="images/chillie powder.webp" alt="Chillie Powder">
+                <label for="ChilliePowder">Chillie Powder</label> 
+                <label>1 quantity - Rs: 160</label>
+                <input type="number" id="ChilliePowder" name="Chillie Powder" min="0"value="0">
+                <button type="button" class="add-button" data-item="ChilliePowder">Add</button>
+            </div>
+            
+            
+        </section>
+      
+    </form>
+
+    <!-- order table -->
+    <h2>Current Order</h2>
+    <table id="order-table">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Change</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Order items will be added  -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td id="total-price">0.00</td>
+            </tr>
+        </tfoot>
+    </table>
+    <section class="Favourites">
+        <button type="button" id="add-to-favourites">Add to Favourites</button>
+        <button type="button" id="apply-favourites">Apply Favourites</button>
+        <button type="button" id="clear-favourites">Clear Favourites</button>
+        <button type="button" id="buy-now">Buy Now</button>
+        </section>
+
+        <!-- footer srart -->
+
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3><span>Fresh Mart</span></h3>
+
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+          
+          <a href="#">Products</a>
+        
+          <a href="#">About</a>
+          
+          <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">Fresh Mart © 2024</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>489 William Gopallawa Mawatha</span> Kandy 20000</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+94703412849</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="Freshmart@gmail.com">Freshmart@gmail.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <div class="footer-icons">
+
+          <i class="fa-brands fa-facebook"></i></a>
+          <i class="fa-brands fa-twitter"></i></a>
+          <i class="fa-brands fa-linkedin"></i></a>
+          <i class="fa-brands fa-github"></i></a>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
